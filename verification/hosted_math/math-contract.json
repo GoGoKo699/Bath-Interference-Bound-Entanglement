@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 5,
+      "source_sha256": "51a93cb07e5ec2a1bc3b470dee7784715046d11f5d1a8e77ec103524be6c5d67",
+      "required_text": [
+        "r+2u+2v=1",
+        "t=tP",
+        "r+4u=1",
+        "t=tE"
+      ]
+    },
+    {
+      "path": "README.md",
+      "index": 7,
+      "source_sha256": "dedde6d84b5da535d33560dac8b2ceffa5978544971f4fe5eab6008075cf280c",
+      "expected_text": "0≤t<tP"
+    },
+    {
+      "path": "README.md",
+      "index": 8,
+      "source_sha256": "cfa06887fd221ea4834228646a4babfe92b233fa15981bd0eb502ccd1c7b69c1",
+      "expected_text": "tP≤t<tE"
+    },
+    {
+      "path": "science/exact_thresholds.md",
+      "index": 87,
+      "source_sha256": "4e3981af6eb971ccb641d28830d16c1a3eb90c987a93c433f1a327612b035037",
+      "required_text": [
+        "r+2u+2v≤1"
+      ]
+    },
+    {
+      "path": "science/operational_meaning.md",
+      "index": 2,
+      "source_sha256": "02abda3f3016066bab77fb2100612759b6b59113701b88a310d45455ee4b6bfe",
+      "required_text": [
+        "Q↔(Φη,t)>0",
+        "t<tP(η)",
+        "t≥tE(η)"
+      ]
+    }
+  ]
+}

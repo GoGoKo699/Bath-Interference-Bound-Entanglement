@@ -292,7 +292,7 @@ It follows that
 
 ```math
 \frac vb=e^{2(1-\eta)t_E}
-\leq e^{2t_E}\leq5^{1/4}<\frac32,
+\leq e^{2t_E}\leq5^{1/4}\lt \frac32,
 ```
 
 so $`c_0=b-2v/3>0`$. All twenty weights are therefore nonnegative. The mixture is an explicit trace-preserving EB channel, proving that $`\Phi_{\eta,t_E}`$ is EB.
@@ -313,10 +313,10 @@ e^{-8t_0}+4e^{-10t_0}=1,
 For $`\eta>0`$, evaluate the witness at PPT onset:
 
 ```math
-w(\eta,t_P)=-\frac{u-v}{4}<0.
+w(\eta,t_P)=-\frac{u-v}{4}\lt 0.
 ```
 
-Thus $`t_P(\eta)<t_E(\eta)`$, and the entire half-open interval $`[t_P,t_E)`$ consists of PPT-entangled Choi states. The PPT endpoint is included; the EB endpoint is excluded.
+Thus $`t_P(\eta)\lt t_E(\eta)`$, and the entire half-open interval $`[t_P,t_E)`$ consists of PPT-entangled Choi states. The PPT endpoint is included; the EB endpoint is excluded.
 
 Both thresholds increase with interference. Implicit differentiation gives
 

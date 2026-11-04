@@ -18,6 +18,7 @@ NODE_PATH="$RENDER_DEPS/node_modules" node verification/hosted_math/capture_host
   --root "$PWD" \
   --repository GoGoKo699/Bath-Interference-Bound-Entanglement \
   --revision "$(git rev-parse HEAD)" \
+  --contract verification/hosted_math/math-contract.json \
   --output /absolute/new-empty-capture-directory
 ```
 
@@ -33,6 +34,11 @@ source expressions with actual hosted MathML at widths 1440 and 760 pixels.
 The report records the exact commit, tree, page scope, source hashes, comparison
 results and artifact hashes. It does not certify other browser versions or
 future changes to GitHub's renderer.
+
+The text contract supplies explicit operand and inequality checks for headline
+results and the duration table. Each entry is bound to the hash of its source
+expression. When editing one of those formulas, review its meaning and update
+the corresponding contract before running the full capture.
 
 The corresponding GitHub Actions job has `contents: read`, does not persist
 checkout credentials, and uploads diagnostic artifacts for seven days. Those

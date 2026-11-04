@@ -5,7 +5,7 @@ For the infinite-temperature family $`\Phi_{\eta,t}=e^{t\mathcal L_{0,\eta}}`$, 
 ```math
 \boxed{
 Q_{\leftrightarrow}(\Phi_{\eta,t})>0
-\quad\Longleftrightarrow\quad t<t_P(\eta),
+\quad\Longleftrightarrow\quad t\lt t_P(\eta),
 \qquad
 \Phi_{\eta,t}\text{ is measure-and-prepare}
 \quad\Longleftrightarrow\quad t\geq t_E(\eta).
@@ -14,7 +14,7 @@ Q_{\leftrightarrow}(\Phi_{\eta,t})>0
 
 Here $`Q_{\leftrightarrow}`$ is the quantum capacity per independent use of the channel with unlimited two-way classical communication. The time $`t`$ is the duration of each noisy use. The capacity statement allows encoding across arbitrarily many independent uses and adaptive local operations with classical communication.
 
-Every positive interference parameter has $`t_P<t_E`$. In the interval $`[t_P,t_E)`$, the channel has zero two-way quantum capacity and still cannot be represented by measuring its input and preparing an output state. Its normalized Choi state is PPT and entangled. This is the binding-entanglement regime. The term and the channel/state connection have a longstanding precedent in [Horodecki, Horodecki and Horodecki, *Binding entanglement channels* (2000)](https://doi.org/10.1080/09500340008244047).
+Every positive interference parameter has $`t_P\lt t_E`$. In the interval $`[t_P,t_E)`$, the channel has zero two-way quantum capacity and still cannot be represented by measuring its input and preparing an output state. Its normalized Choi state is PPT and entangled. This is the binding-entanglement regime. The term and the channel/state connection have a longstanding precedent in [Horodecki, Horodecki and Horodecki, *Binding entanglement channels* (2000)](https://doi.org/10.1080/09500340008244047).
 
 The proof uses an explicit two-qubit distillation certificate before PPT onset. It does not assume that arbitrary NPT states are distillable.
 
@@ -67,9 +67,9 @@ is an eigenvector of $`J_{\eta,t}^{\Gamma}`$ with eigenvalue
 \frac{1-r-2u-2v}{16}.
 ```
 
-After conditioning, its partial-transpose expectation is $`(1-r-2u-2v)/[4(1+b)]`$. It is negative exactly when $`t<t_P`$. Thus the successful two-qubit state is entangled throughout the entire pre-PPT interval.
+After conditioning, its partial-transpose expectation is $`(1-r-2u-2v)/[4(1+b)]`$. It is negative exactly when $`t\lt t_P`$. Thus the successful two-qubit state is entangled throughout the entire pre-PPT interval.
 
-Every entangled two-qubit state is distillable, as established by [Horodecki, Horodecki and Horodecki (1997)](https://doi.org/10.1103/PhysRevLett.78.574). Consequently the channel has positive two-way-assisted quantum capacity for every fixed $`t<t_P`$.
+Every entangled two-qubit state is distillable, as established by [Horodecki, Horodecki and Horodecki (1997)](https://doi.org/10.1103/PhysRevLett.78.574). Consequently the channel has positive two-way-assisted quantum capacity for every fixed $`t\lt t_P`$.
 
 ### An explicit positive-rate route
 
@@ -89,7 +89,7 @@ p_{\rm rec}(F)=F^2+2Fg+5g^2,
 F'=\frac{F^2+g^2}{F^2+2Fg+5g^2}.
 ```
 
-Retwirl the successful pairs after each recurrence round, preserving their fidelity, so the next round again starts with probabilities $`(F_j,g_j,g_j,g_j)`$. For $`1/2<F<1`$, the update increases $`F`$ strictly and repeated updates converge to one. After a finite number $`k`$ of rounds, the hashing yield
+Retwirl the successful pairs after each recurrence round, preserving their fidelity, so the next round again starts with probabilities $`(F_j,g_j,g_j,g_j)`$. For $`1/2\lt F\lt 1`$, the update increases $`F`$ strictly and repeated updates converge to one. After a finite number $`k`$ of rounds, the hashing yield
 
 ```math
 1-h_2(F_k)-(1-F_k)\log_2 3
@@ -150,7 +150,7 @@ Q_{\leftrightarrow}(\Phi_{\eta,t})=0
 
 ## 3. Entanglement breaking at the later threshold
 
-For $`t_P\leq t<t_E`$, sending half of $`\Omega_4`$ still creates an entangled Choi state, certified by the Breuer–Hall witness. Every such state is PPT, so its entanglement is undistillable by LOCC. The surviving correlation does not establish a positive private capacity or a storage advantage.
+For $`t_P\leq t\lt t_E`$, sending half of $`\Omega_4`$ still creates an entangled Choi state, certified by the Breuer–Hall witness. Every such state is PPT, so its entanglement is undistillable by LOCC. The surviving correlation does not establish a positive private capacity or a storage advantage.
 
 At $`t=t_E`$, the [twenty-component decomposition](exact_thresholds.md#4-a-constructive-eb-decomposition-at-the-boundary) expresses the entire channel as a measure-and-prepare operation. This is a statement for every input and every reference system, rather than only for a selected initial state. Later channels remain measure-and-prepare by composition.
 

@@ -162,31 +162,31 @@ J(\Phi_{\beta,1,t_*})\,|\Omega_4\rangle
 Thus strict PPT entanglement is certified whenever
 
 ```math
-52t_*(e^{4\beta}-1)<\frac{1369}{250000}.
+52t_*(e^{4\beta}-1)\lt \frac{1369}{250000}.
 ```
 
-This condition also makes the fixed witness expectation strictly negative because $`2(1369/250000)<19/1000`$, and therefore the Breuer–Hall output has a negative eigenvalue. No assertion about its globally smallest eigenvector is needed.
+This condition also makes the fixed witness expectation strictly negative because $`2(1369/250000)\lt 19/1000`$, and therefore the Breuer–Hall output has a negative eigenvalue. No assertion about its globally smallest eigenvector is needed.
 
 ## An entirely explicit positive inverse temperature
 
 Take $`\beta=10^{-4}`$, so $`4\beta=1/2500`$. No numerical matrix exponential is needed to verify the certificate. The elementary estimates
 
 ```math
-e^x-1<\frac{x}{1-x}\quad(0<x<1),
+e^x-1\lt \frac{x}{1-x}\quad(0\lt x\lt 1),
 \qquad
-t_*<\frac{3}{16}
+t_*\lt \frac{3}{16}
 ```
 
 give
 
 ```math
 \delta
-<52\frac{3}{16}\frac1{2499}
+\lt 52\frac{3}{16}\frac1{2499}
 =\frac{39}{9996}
-<\frac{1369}{250000}.
+\lt \frac{1369}{250000}.
 ```
 
-For the second estimate, $`e^{3/4}>1+3/4+(3/4)^2/2+(3/4)^3/6=269/128>25/12`$, so $`\log(25/12)<3/4`$. All inequalities in the certificate are therefore strict and can be checked using rational numbers. Direct evaluation of the conservative expression gives $`\delta\approx0.0038174`$, but the rational comparison already proves the result.
+For the second estimate, $`e^{3/4}>1+3/4+(3/4)^2/2+(3/4)^3/6=269/128>25/12`$, so $`\log(25/12)\lt 3/4`$. All inequalities in the certificate are therefore strict and can be checked using rational numbers. Direct evaluation of the conservative expression gives $`\delta\approx0.0038174`$, but the rational comparison already proves the result.
 
 It follows that the finite-temperature, primitive, GNS-detailed-balanced channel $`\Phi_{10^{-4},1,t_*}`$ is PPT and not entanglement breaking. Its Choi state is bound entangled across input reference versus system. Adding the specified commuting Hamiltonian part preserves this classification, as explained in [Model](model.md).
 
@@ -203,7 +203,7 @@ The strict inequalities provide robustness, rather than a statement confined to 
 Any CPTP channel within diamond distance
 
 ```math
-\epsilon_{\mathrm{ch}}<\min\{\bar m_P,\bar m_B/2\}
+\epsilon_{\mathrm{ch}}\lt \min\{\bar m_P,\bar m_B/2\}
 ```
 
 of $`\Phi_{10^{-4},1,t_*}`$ remains strictly PPT with a negative Breuer–Hall eigenvalue. For a nearby GKLS generator $`\widetilde{\mathcal L}`$ and a nearby positive time $`\widetilde t`$, a sufficient estimate is
@@ -228,7 +228,7 @@ Nor is robustness restricted to the rank-one coefficient blocks at $`\eta=1`$. T
 \le8(1-\eta)\bigl(\cosh\beta+\cosh3\beta\bigr).
 ```
 
-Indeed, only the two cross terms at each of the frequencies $`\pm2,\pm6`$ change, their cross anticommutator products vanish, and each remaining map $`X\mapsto F_aXF_b^\dagger`$ has diamond norm at most one. Values $`\eta<1`$ sufficiently close to one therefore retain the strict thermal certificate. At such points both two-dimensional coefficient matrices are positive definite, so the result persists in an ordinary open neighborhood within the admissible rate parameters, rather than relying on maximal bath overlap.
+Indeed, only the two cross terms at each of the frequencies $`\pm2,\pm6`$ change, their cross anticommutator products vanish, and each remaining map $`X\mapsto F_aXF_b^\dagger`$ has diamond norm at most one. Values $`\eta\lt 1`$ sufficiently close to one therefore retain the strict thermal certificate. At such points both two-dimensional coefficient matrices are positive definite, so the result persists in an ordinary open neighborhood within the admissible rate parameters, rather than relying on maximal bath overlap.
 
 For every fixed $`\eta>0`$, an interior time in the exact infinite-temperature interval similarly has strict PPT and witness margins. Continuity supplies some positive-temperature neighborhood for that fixed $`\eta`$. Its size may shrink as $`\eta\to0`$.
 

@@ -22,7 +22,6 @@ jobs:
     timeout-minutes: 20
     env:
       SOURCE_REVISION: 1efa13841c33878e6774ab42184574f91ec41968
-      NODE_PATH: ${{ runner.temp }}/hosted-dependencies/node_modules
     steps:
       - name: Check out the inspected revision and collector
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -33,8 +32,10 @@ jobs:
       - name: Install isolated browser dependencies
         run: |
           npm install --prefix "$RUNNER_TEMP/hosted-dependencies" playwright@1.56.1 mathjax-full@3.2.1
-          node "$NODE_PATH/playwright/cli.js" install --with-deps chromium
+          node "$RUNNER_TEMP/hosted-dependencies/node_modules/playwright/cli.js" install --with-deps chromium
       - name: Capture the pinned early README sample
+        env:
+          NODE_PATH: ${{ runner.temp }}/hosted-dependencies/node_modules
         run: |
           node verification/hosted_math/capture_hosted_math.cjs \
             --root "$GITHUB_WORKSPACE" \

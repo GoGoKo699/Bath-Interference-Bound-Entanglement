@@ -26,7 +26,7 @@ J(\Phi)=(\mathrm{id}_4\otimes\Phi)
 Partial transpose $`\Gamma`$ acts on the output factor. Let the Breuer–Hall positive map be
 
 ```math
-\mathcal B(X)=\operatorname{tr}(X)I-X-VX^TV^\dagger,
+\mathcal B(X)=\mathrm{tr}(X)I-X-VX^TV^\dagger,
 \qquad V=YI,\qquad V^T=-V.
 ```
 

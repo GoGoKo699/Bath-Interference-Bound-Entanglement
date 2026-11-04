@@ -51,7 +51,7 @@ Project variables are dimensionless:
 
 ```math
 H_{\mathrm{phys}}=E_0H,\qquad
-H=\operatorname{diag}(4,2,-4,-2),\qquad
+H=\mathrm{diag}(4,2,-4,-2),\qquad
 \beta=\beta_{\mathrm{phys}}E_0,\qquad
 t=\kappa t_{\mathrm{phys}}.
 ```
@@ -150,7 +150,7 @@ At $`\eta=0`$ no coherence reaches levels 3 and 2. For every $`\eta>0`$ and $`t>
 
 ```math
 \langle X_{23}\rangle_t
-=2\operatorname{Re}y(t)
+=2\mathrm{Re}\,y(t)
 =\frac14e^{-10t}\sinh(2\eta t).
 ```
 
@@ -164,33 +164,48 @@ This is a mechanism example, not a proof of bound entanglement. It involves one 
 
 The selected source route explains the dynamical framework. The repository supplies the following proof obligations for its particular generator. Primary research citations credit their established ingredients; they do not add further educational anchors.
 
-1. **Prove the full matched thermal model.** [Model](../science/model.md) specifies all frequency blocks, proves that every population trajectory is independent of interference, checks GNS detailed balance, and proves uniqueness of the faithful stationary state. Thermal stationarity alone is not substituted for quantum detailed balance.
+### 1. Prove the full matched thermal model
 
-2. **Turn a channel into a reference–system state.** Keep one half of a maximally entangled pair and evolve the other:
+[Model](../science/model.md) specifies all frequency blocks, proves that every population trajectory is independent of interference, checks GNS detailed balance, and proves uniqueness of the faithful stationary state. Thermal stationarity alone is not substituted for quantum detailed balance.
 
-   ```math
-   |\Omega_4\rangle=\frac12\sum_{j=0}^{3}|j,j\rangle,
-   \qquad J(\Phi)=(\operatorname{id}_4\otimes\Phi)
-   (|\Omega_4\rangle\langle\Omega_4|).
-   ```
+### 2. Turn a channel into a reference–system state
 
-   This normalized Choi state tests a channel with an untouched reference. The Choi criterion for complete positivity and the equivalence between separable Choi states and measure-and-prepare channels are [primary ingredients credited here](../references/RELATED_WORK.md#choi-states-ppt-and-entanglement-breaking-channels).
+Keep one half of a maximally entangled pair and evolve the other:
 
-3. **Distinguish PPT from separability.** Partial transpose transposes only the output indices of $`J`$. Positivity after that operation is necessary for separability, but in dimension $`4\times4`$ it is not sufficient. [Exact thresholds](../science/exact_thresholds.md#2-exact-ppt-criterion) computes the complete partial-transpose spectrum. The [Breuer–Hall positive map](../references/RELATED_WORK.md#the-breuerhall-witness) detects entanglement that survives this PPT test.
+```math
+\begin{aligned}
+|\Omega_4\rangle&=\frac12\sum_{j=0}^{3}|j,j\rangle,\\
+J(\Phi)&=(\mathrm{id}_4\otimes\Phi)
+(|\Omega_4\rangle\langle\Omega_4|).
+\end{aligned}
+```
 
-4. **Prove both sides of the EB boundary.** A negative witness proves that a channel is not entanglement breaking. The converse needs a separate argument: the project constructs [twenty measure-and-prepare components](../science/exact_thresholds.md#4-a-constructive-eb-decomposition-at-the-boundary) whose convex mixture is the boundary channel. With $`r=e^{-8t}`$, $`u=e^{-(10-2\eta)t}`$ and $`v=e^{-(10+2\eta)t}`$, the two exact conditions at $`\beta=0`$ are
+This normalized Choi state tests a channel with an untouched reference. The Choi criterion for complete positivity and the equivalence between separable Choi states and measure-and-prepare channels are [primary ingredients credited here](../references/RELATED_WORK.md#choi-states-ppt-and-entanglement-breaking-channels).
 
-   ```math
-   \Phi_{\eta,t}\text{ is PPT}\iff r+2u+2v\leq1,
-   \qquad
-   \Phi_{\eta,t}\text{ is EB}\iff r+4u\leq1.
-   ```
+### 3. Distinguish PPT from separability
 
-   Their equality times are $`t_P`$ and $`t_E`$. The full-interpolation proof is supplied locally; the [known symplectic geometry of the endpoint](../references/RELATED_WORK.md#static-symplectic-channel-geometry) is credited separately.
+Partial transpose transposes only the output indices of $`J`$. Positivity after that operation is necessary for separability, but in dimension $`4\times4`$ it is not sufficient. [Exact thresholds](../science/exact_thresholds.md#2-exact-ppt-criterion) computes the complete partial-transpose spectrum. The [Breuer–Hall positive map](../references/RELATED_WORK.md#the-breuerhall-witness) detects entanglement that survives this PPT test.
 
-5. **Connect the inequalities to communication.** [Operational meaning](../science/operational_meaning.md) projects the pre-PPT Choi state onto a fixed two-qubit subspace, yielding an entangled conditional state. Standard purification and hashing then give a positive two-way assisted rate. Once the channel is PPT, an adaptive protocol using independent calls and local operations with classical communication preserves PPT and cannot produce reliable maximally entangled pairs. The [primary distillation and binding-channel results](../references/RELATED_WORK.md#distillability-and-two-way-assisted-quantum-communication) supply the established ingredients. The proof does not presume that every higher-dimensional NPT state is distillable.
+### 4. Prove both sides of the EB boundary
 
-6. **Continue to positive temperature with a controlled bound.** [Thermal extension](../science/thermal_extension.md) starts from strict PPT and witness margins, bounds the channel change, and certifies a point at $`\beta=10^{-4}`$ by rational inequalities. This establishes persistence; it does not supply exact finite-temperature thresholds.
+A negative witness proves that a channel is not entanglement breaking. The converse needs a separate argument: the project constructs [twenty measure-and-prepare components](../science/exact_thresholds.md#4-a-constructive-eb-decomposition-at-the-boundary) whose convex mixture is the boundary channel. With $`r=e^{-8t}`$, $`u=e^{-(10-2\eta)t}`$ and $`v=e^{-(10+2\eta)t}`$, the two exact conditions at $`\beta=0`$ are
+
+```math
+\begin{aligned}
+\Phi_{\eta,t}\text{ is PPT}&\Leftrightarrow r+2u+2v\leq1,\\
+\Phi_{\eta,t}\text{ is EB}&\Leftrightarrow r+4u\leq1.
+\end{aligned}
+```
+
+Their equality times are $`t_P`$ and $`t_E`$. The full-interpolation proof is supplied locally; the [known symplectic geometry of the endpoint](../references/RELATED_WORK.md#static-symplectic-channel-geometry) is credited separately.
+
+### 5. Connect the inequalities to communication
+
+[Operational meaning](../science/operational_meaning.md) projects the pre-PPT Choi state onto a fixed two-qubit subspace, yielding an entangled conditional state. Standard purification and hashing then give a positive two-way assisted rate. Once the channel is PPT, an adaptive protocol using independent calls and local operations with classical communication preserves PPT and cannot produce reliable maximally entangled pairs. The [primary distillation and binding-channel results](../references/RELATED_WORK.md#distillability-and-two-way-assisted-quantum-communication) supply the established ingredients. The proof does not presume that every higher-dimensional NPT state is distillable.
+
+### 6. Continue to positive temperature with a controlled bound
+
+[Thermal extension](../science/thermal_extension.md) starts from strict PPT and witness margins, bounds the channel change, and certifies a point at $`\beta=10^{-4}`$ by rational inequalities. This establishes persistence; it does not supply exact finite-temperature thresholds.
 
 Together these steps show why an unchanged population generator need not fix the lifetime of channel entanglement. For every $`\eta>0`$ at $`\beta=0`$, $`t_P\lt t_E`$: throughout $`[t_P,t_E)`$ the channel has zero two-way assisted quantum capacity but an entangled Choi state. The [weak-interference law](../science/exact_thresholds.md#5-threshold-ordering-and-weak-interference-behavior) determines how that interval opens.
 

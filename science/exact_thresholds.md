@@ -6,9 +6,9 @@ For the four-level Davies family defined in [the model](model.md), the infinite-
 \boxed{
 \begin{aligned}
 \Phi_{\eta,t}\text{ is PPT}
-&\iff e^{-8t}+4e^{-10t}\cosh(2\eta t)\leq1,\\
+&\Leftrightarrow e^{-8t}+4e^{-10t}\cosh(2\eta t)\leq1,\\
 \Phi_{\eta,t}\text{ is entanglement breaking}
-&\iff e^{-8t}+4e^{-(10-2\eta)t}\leq1.
+&\Leftrightarrow e^{-8t}+4e^{-(10-2\eta)t}\leq1.
 \end{aligned}}
 ```
 
@@ -18,7 +18,7 @@ These formulas concern $`\beta=0`$. A strictly positive inverse-temperature exam
 
 ## 1. Solving the generator
 
-Use computational basis order $`00,01,10,11`$, matrix units $`E_{ij}=\lvert i\rangle\langle j\rvert`$, and the Pauli convention $`XY=X\otimes Y`$. The system Hamiltonian is $`H=\operatorname{diag}(4,2,-4,-2)`$.
+Use computational basis order $`00,01,10,11`$, matrix units $`E_{ij}=\lvert i\rangle\langle j\rvert`$, and the Pauli convention $`XY=X\otimes Y`$. The system Hamiltonian is $`H=\mathrm{diag}(4,2,-4,-2)`$.
 
 ### 1.1 Populations
 
@@ -96,7 +96,7 @@ Use the normalized maximally entangled vector and Choi state
 ```math
 \lvert\Omega_4\rangle=\frac12\sum_{i=0}^{3}\lvert i,i\rangle,
 \qquad
-J_{\eta,t}=(\operatorname{id}\otimes\Phi_{\eta,t})
+J_{\eta,t}=(\mathrm{id}\otimes\Phi_{\eta,t})
 (\lvert\Omega_4\rangle\langle\Omega_4\rvert).
 ```
 
@@ -138,7 +138,7 @@ Indeed, the difference between the last entry and $`1-r-2u-2v`$ is $`2(r-u)+6(v-
 
 ```math
 \Phi_{\eta,t}\text{ is PPT}
-\iff r+2u+2v\leq1.
+\Leftrightarrow r+2u+2v\leq1.
 ```
 
 ## 3. An entanglement witness up to the EB boundary
@@ -146,16 +146,16 @@ Indeed, the difference between the last entry and $`1-r-2u-2v`$ is $`2(r-u)+6(v-
 The Breuer–Hall map on four-dimensional matrices is
 
 ```math
-\mathcal B(X)=\operatorname{Tr}(X)I-X-VX^TV^\dagger,
+\mathcal B(X)=\mathrm{Tr}(X)I-X-VX^TV^\dagger,
 \qquad V=YI,\qquad V^T=-V.
 ```
 
-Its positivity has a short direct proof. For every unit vector $`\psi`$, skew-symmetry gives $`\langle\psi,V\overline\psi\rangle=0`$. Thus $`\mathcal B(\lvert\psi\rangle\langle\psi\rvert)`$ is the identity minus two orthogonal rank-one projections and is positive. A positive combination of rank-one projectors proves positivity on every positive matrix. Applying $`\operatorname{id}\otimes\mathcal B`$ to a separable state must consequently preserve positivity. This witness construction is due to [Breuer (2006)](https://doi.org/10.1103/PhysRevLett.97.080501) and [Hall (2006)](https://doi.org/10.1088/0305-4470/39/45/020).
+Its positivity has a short direct proof. For every unit vector $`\psi`$, skew-symmetry gives $`\langle\psi,V\overline\psi\rangle=0`$. Thus $`\mathcal B(\lvert\psi\rangle\langle\psi\rvert)`$ is the identity minus two orthogonal rank-one projections and is positive. A positive combination of rank-one projectors proves positivity on every positive matrix. Applying $`\mathrm{id}\otimes\mathcal B`$ to a separable state must consequently preserve positivity. This witness construction is due to [Breuer (2006)](https://doi.org/10.1103/PhysRevLett.97.080501) and [Hall (2006)](https://doi.org/10.1088/0305-4470/39/45/020).
 
-Because the channel is trace preserving, $`\operatorname{Tr}_{\rm out}J=I/4`$, so
+Because the channel is trace preserving, $`\mathrm{Tr}_{\rm out}J=I/4`$, so
 
 ```math
-(\operatorname{id}\otimes\mathcal B)(J)
+(\mathrm{id}\otimes\mathcal B)(J)
 =\frac{I_{16}}4-J-(I\otimes V)J^\Gamma(I\otimes V^\dagger).
 ```
 
@@ -185,8 +185,8 @@ For a nonidentity two-qubit Pauli $`g`$, let $`\Pi_{g,\pm}=(I\pm g)/2`$. Each pr
 
 ```math
 \mathcal S_g(X)
-=\sum_{s=\pm1}\operatorname{Tr}(\Pi_{g,s}X)\frac{\Pi_{g,s}}2
-=\frac14\bigl[\operatorname{Tr}(X)I+\operatorname{Tr}(gX)g\bigr].
+=\sum_{s=\pm1}\mathrm{Tr}(\Pi_{g,s}X)\frac{\Pi_{g,s}}2
+=\frac14\bigl[\mathrm{Tr}(X)I+\mathrm{Tr}(gX)g\bigr].
 ```
 
 This is a trace-preserving measure-and-prepare map: the measurement projectors sum to $`I`$, and each prepared state $`\Pi_{g,s}/2`$ has unit trace. It retains the Pauli coefficients of $`I`$ and $`g`$ and erases every other coefficient. The normalized mixed preparation within each rank-two eigenspace is essential. Eigenspace pinching alone has different coefficients and preserves quantum information within each eigenspace.
@@ -201,7 +201,7 @@ These are four mutually orthogonal rank-one projectors. The **triple channel**
 
 ```math
 \mathcal T_{g,h}(X)
-=\sum_{s,t}\operatorname{Tr}(\Pi_{s,t}X)\Pi_{s,t}
+=\sum_{s,t}\mathrm{Tr}(\Pi_{s,t}X)\Pi_{s,t}
 ```
 
 is complete dephasing in their joint eigenbasis, hence also trace preserving and entanglement breaking. It retains exactly $`I,g,h,gh`$. If $`gh=-k`$ for the chosen unsigned Pauli representative $`k`$, the retained coefficient of $`k`$ is still one. Thus a commuting triple can be specified by its three unsigned Pauli labels.

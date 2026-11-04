@@ -195,7 +195,7 @@ Each milestone records a central question, an understanding target, earlier-ID d
 
 **Central question.** Which Hamiltonian and bath-correlation blocks realize the proposed control within a valid Davies generator?
 
-**Understanding target.** Identify the distinct levels of $`H=\operatorname{diag}(4,2,-4,-2)`$, the repeated gaps at 2 and 6, and the two coefficient blocks with off-diagonal entries of opposite sign proportional to $`\eta`$. Explain why their eigenvalues keep the generator completely positive for $`0\le\eta\le1`$. Track the separate energy scale, dissipative rate, dimensionless time, and dimensionless inverse temperature.
+**Understanding target.** Identify the distinct levels of $`H=\mathrm{diag}(4,2,-4,-2)`$, the repeated gaps at 2 and 6, and the two coefficient blocks with off-diagonal entries of opposite sign proportional to $`\eta`$. Explain why their eigenvalues keep the generator completely positive for $`0\le\eta\le1`$. Track the separate energy scale, dissipative rate, dimensionless time, and dimensionless inverse temperature.
 
 **Dependencies and story role.** Earlier IDs: M04, M05, M06, M08, M14. Begins the narrative with the actual local ingredients rather than an abstract assertion that suitable noise exists.
 

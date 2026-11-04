@@ -4,7 +4,7 @@ This project studies how interference between equal-frequency transition paths c
 
 ## The contribution being distinguished
 
-For the Hamiltonian $`H=\operatorname{diag}(4,2,-4,-2)`$, the interference parameter $`0\leq\eta\leq1`$ changes coherence transfer between transition operators at repeated Bohr frequencies. It preserves every population trajectory and the diagonal attenuation coefficients in the energy-coherence basis. The coherence eigenmode decay rates do change.
+For the Hamiltonian $`H=\mathrm{diag}(4,2,-4,-2)`$, the interference parameter $`0\leq\eta\leq1`$ changes coherence transfer between transition operators at repeated Bohr frequencies. It preserves every population trajectory and the diagonal attenuation coefficients in the energy-coherence basis. The coherence eigenmode decay rates do change.
 
 At inverse temperature $`\beta=0`$, set
 
@@ -29,7 +29,7 @@ The ingredients below are inherited. The specific contribution is their combinat
 
 **Sean Prudhoe, _Entanglement Breaking Structure of Cartan-Covariant Quantum Channels_**, [arXiv:2501.03959v3](https://arxiv.org/abs/2501.03959v3), revised 7 August 2026; first posted 7 January 2025 (`prudhoe2026cartan`). Section 3 analyzes symplectic-covariant channels and their Choi, PPT and separability geometry. The fully interfering endpoint here, $`\eta=1`$, has the corresponding five- and ten-dimensional traceless operator sectors. Its threshold calculation is therefore an application of known static geometry. Prudhoe also analyzes other Cartan covariance groups; the present construction does not claim that every symmetry classification is new or irrelevant.
 
-**Sang-Jun Park, _$k$-Positivity and high-dimensional bound entanglement under symplectic group symmetries_**, [arXiv:2602.09860v3](https://arxiv.org/abs/2602.09860v3), revised 10 March 2026; first posted 10 February 2026 (`park2026symplectic`). Theorem 4.1 gives exact PPT and separability regions in the two-real-parameter symplectic families. The work also develops stronger positive-map and Schmidt-number results. These results are direct antecedents for the endpoint cone and the use of symplectic witnesses.
+**Sang-Jun Park, _$`k`$-Positivity and high-dimensional bound entanglement under symplectic group symmetries_**, [arXiv:2602.09860v3](https://arxiv.org/abs/2602.09860v3), revised 10 March 2026; first posted 10 February 2026 (`park2026symplectic`). Theorem 4.1 gives exact PPT and separability regions in the two-real-parameter symplectic families. The work also develops stronger positive-map and Schmidt-number results. These results are direct antecedents for the endpoint cone and the use of symplectic witnesses.
 
 For $`0\lt \eta\lt 1`$ and $`t>0`$, this project's nonidentity Pauli eigenvalues have multiplicities $`1,4,4,6`$, splitting both of the symplectic sectors. Consequently the two-parameter symplectic classification does not itself prove separability of the interior interpolation. The project supplies that step by an explicit mixture of singleton Pauli measure-and-prepare channels and dephasing channels associated with maximal commuting triples. The novelty claim rests on this full trajectory and its bath realization, rather than on a new interpretation of the known endpoint cone. This comparison does not assert an exhaustive classification of all other covariant channel families.
 
@@ -73,7 +73,7 @@ The weak-coupling Markovian framework is due to [E. B. Davies, _Markovian master
 The map used to certify PPT entanglement is the established positive map
 
 ```math
-\mathcal B(X)=\operatorname{tr}(X)I-X-VX^{\mathsf T}V^\dagger,
+\mathcal B(X)=\mathrm{tr}(X)I-X-VX^{\mathsf T}V^\dagger,
 \qquad V^{\mathsf T}=-V,
 ```
 

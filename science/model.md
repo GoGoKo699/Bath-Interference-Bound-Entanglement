@@ -11,7 +11,7 @@ The system has four energy eigenstates, labelled $`0,1,2,3`$ in the computationa
 ```math
 H_{\mathrm{phys}}=E_0 H,
 \qquad
-H=3ZI+ZZ=\operatorname{diag}(4,2,-4,-2),
+H=3ZI+ZZ=\mathrm{diag}(4,2,-4,-2),
 \qquad E_0>0.
 ```
 
@@ -96,8 +96,8 @@ together with their adjoints and the two diagonal dephasing jumps. The opposite 
 Every jump has a definite Bohr frequency, and cross terms couple only transitions of the same frequency. Consequently,
 
 ```math
-\mathcal L_{\beta,\eta}\circ\operatorname{Ad}_{e^{-isH}}
-=\operatorname{Ad}_{e^{-isH}}\circ\mathcal L_{\beta,\eta}
+\mathcal L_{\beta,\eta}\circ\mathrm{Ad}_{e^{-isH}}
+=\mathrm{Ad}_{e^{-isH}}\circ\mathcal L_{\beta,\eta}
 \qquad(s\in\mathbb R).
 ```
 
@@ -117,14 +117,14 @@ The exact model fixes this Hamiltonian part. An arbitrary additional diagonal La
 The faithful Gibbs state is
 
 ```math
-\sigma_\beta=\frac{e^{-\beta H}}{\operatorname{tr}(e^{-\beta H})}.
+\sigma_\beta=\frac{e^{-\beta H}}{\mathrm{tr}(e^{-\beta H})}.
 ```
 
 We use the Heisenberg GNS inner product
 
 ```math
 \langle X,Y\rangle_{\sigma_\beta}
-=\operatorname{tr}(\sigma_\beta X^\dagger Y).
+=\mathrm{tr}(\sigma_\beta X^\dagger Y).
 ```
 
 Let $`\mathcal L_{\beta,\eta}^{*}`$ be the trace adjoint of the Schrödinger dissipator. It is self-adjoint in this inner product. The following calculation proves this statement directly rather than inferring quantum detailed balance from a population stationary state.
@@ -142,9 +142,9 @@ For the Heisenberg jump map $`\mathcal M_A(X)=A^\dagger X A`$, cyclicity of the 
 ```math
 \begin{aligned}
 \langle X,\mathcal M_{A_\omega}(Y)\rangle_{\sigma_\beta}
-&=\operatorname{tr}(A_\omega\sigma_\beta X^\dagger A_\omega^\dagger Y)\\
+&=\mathrm{tr}(A_\omega\sigma_\beta X^\dagger A_\omega^\dagger Y)\\
 &=e^{\beta\omega}
-\operatorname{tr}(\sigma_\beta A_\omega X^\dagger A_\omega^\dagger Y)\\
+\mathrm{tr}(\sigma_\beta A_\omega X^\dagger A_\omega^\dagger Y)\\
 &=\left\langle e^{\beta\omega}A_\omega X A_\omega^\dagger,
 Y\right\rangle_{\sigma_\beta}.
 \end{aligned}
@@ -169,7 +169,7 @@ The two weighted jump maps are therefore each other's GNS adjoints. Moreover, $`
 Because $`\mathcal L_{\beta,\eta}^{*}(I)=0`$, this identity also proves stationarity:
 
 ```math
-\operatorname{tr}(\sigma_\beta\mathcal L_{\beta,\eta}^{*}(X))=0
+\mathrm{tr}(\sigma_\beta\mathcal L_{\beta,\eta}^{*}(X))=0
 \quad\text{for every }X,
 \qquad
 \mathcal L_{\beta,\eta}(\sigma_\beta)=0.
@@ -222,7 +222,7 @@ This matrix is independent of $`\eta`$. Its detailed balance is explicit:
 
 ```math
 (Q_\beta)_{ij}(\sigma_\beta)_{jj}
-=\frac{C_{ij}}{\operatorname{tr}(e^{-\beta H})}
+=\frac{C_{ij}}{\mathrm{tr}(e^{-\beta H})}
 e^{-\beta(E_i+E_j)/2}
 =(Q_\beta)_{ji}(\sigma_\beta)_{ii}.
 ```

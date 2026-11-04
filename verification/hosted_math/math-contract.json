@@ -25,12 +25,163 @@
       "expected_text": "tP≤t<tE"
     },
     {
+      "path": "learning/MILESTONES.md",
+      "index": 1,
+      "source_sha256": "4ede8bd0d8f7cd945b1339a66698ae06565def73cfaeace3651cb7be2f402fe7",
+      "expected_text": "H=diag(4,2,−4,−2)"
+    },
+    {
+      "path": "learning/RIVAS_HUELGA_BRIDGE.md",
+      "index": 11,
+      "source_sha256": "ff9371737dda100d9094dd6bc30f3e735bf7384bc4264a1300844844563f48bd",
+      "expected_text": "Hphys=E0H,H=diag(4,2,−4,−2),β=βphysE0,t=κtphys."
+    },
+    {
+      "path": "learning/RIVAS_HUELGA_BRIDGE.md",
+      "index": 59,
+      "source_sha256": "373015e89e4f0bcd3fc79ee66075a7c9364121a7c9f6e6c848f3cbe49e872444",
+      "expected_text": "⟨X23⟩t=2Rey(t)=14e−10tsinh(2ηt)."
+    },
+    {
+      "path": "learning/RIVAS_HUELGA_BRIDGE.md",
+      "index": 64,
+      "source_sha256": "40470ffcf7a55c164ab284a418e064dd335c8aeed17df7d432b4a559c45a48c8",
+      "expected_text": "|Ω4⟩=12∑j=03|j,j⟩,J(Φ)=(id4⊗Φ)(|Ω4⟩⟨Ω4|)."
+    },
+    {
+      "path": "learning/RIVAS_HUELGA_BRIDGE.md",
+      "index": 71,
+      "source_sha256": "557ede5fd1353e179ffa5bf1140603cb5d3d63c740df6d785b38e2e5ec5abf94",
+      "expected_text": "Φη,tisPPT⇔r+2u+2v≤1,Φη,tisEB⇔r+4u≤1."
+    },
+    {
+      "path": "references/RELATED_WORK.md",
+      "index": 1,
+      "source_sha256": "4ede8bd0d8f7cd945b1339a66698ae06565def73cfaeace3651cb7be2f402fe7",
+      "expected_text": "H=diag(4,2,−4,−2)"
+    },
+    {
+      "path": "references/RELATED_WORK.md",
+      "index": 9,
+      "source_sha256": "8254c329a92850f6d539dd376f4816ee2764517da5e0235514af433164480d7a",
+      "expected_text": "k"
+    },
+    {
+      "path": "references/RELATED_WORK.md",
+      "index": 17,
+      "source_sha256": "34344458e8e4d82fc7a2ce37784e99a84be98ce39cc426aa161db4dfc0c7e0a2",
+      "expected_text": "B(X)=tr(X)I−X−VXTV†,VT=−V,"
+    },
+    {
+      "path": "science/README.md",
+      "index": 5,
+      "source_sha256": "2b9340c69b30d05c47bcee0a9cddc526bd61e607120ca3991e53c97159e224bd",
+      "expected_text": "Jβ,η,t=(id4⊗Φβ,η,t)(|Ω4⟩⟨Ω4|),|Ω4⟩=12∑j=03|j,j⟩."
+    },
+    {
+      "path": "science/exact_thresholds.md",
+      "index": 4,
+      "source_sha256": "eb5a985284cee1ab356c0b34fffa90d225d3a21dc3dddc8d36f9f9b0ed28e91e",
+      "expected_text": "Φη,tisPPT⇔e−8t+4e−10tcosh(2ηt)≤1,Φη,tisentanglementbreaking⇔e−8t+4e−(10−2η)t≤1."
+    },
+    {
+      "path": "science/exact_thresholds.md",
+      "index": 11,
+      "source_sha256": "4ede8bd0d8f7cd945b1339a66698ae06565def73cfaeace3651cb7be2f402fe7",
+      "expected_text": "H=diag(4,2,−4,−2)"
+    },
+    {
+      "path": "science/exact_thresholds.md",
+      "index": 64,
+      "source_sha256": "2dc56441e804d0b69c9c1cb0dcb9940e420e709cf66c5e3b875a00c4ec895a9b",
+      "expected_text": "|Ω4⟩=12∑i=03|i,i⟩,Jη,t=(id⊗Φη,t)(|Ω4⟩⟨Ω4|)."
+    },
+    {
       "path": "science/exact_thresholds.md",
       "index": 87,
-      "source_sha256": "4e3981af6eb971ccb641d28830d16c1a3eb90c987a93c433f1a327612b035037",
+      "source_sha256": "b23e452fe15c396d6c994bc7c7e8a257fa26f6ea56808f854fb54e8a3eeb7639",
       "required_text": [
         "r+2u+2v≤1"
-      ]
+      ],
+      "expected_text": "Φη,tisPPT⇔r+2u+2v≤1."
+    },
+    {
+      "path": "science/exact_thresholds.md",
+      "index": 88,
+      "source_sha256": "b92dff6592a8fc814481187eaf1d10a7a93c85f5ad4b74c4c3049765404c46cb",
+      "expected_text": "B(X)=Tr(X)I−X−VXTV†,V=YI,VT=−V."
+    },
+    {
+      "path": "science/exact_thresholds.md",
+      "index": 92,
+      "source_sha256": "eb2c5617a3aa1c8a48b12bac869fa5e8835acbf463af4ba6a5398fa92d6a55f4",
+      "expected_text": "id⊗B"
+    },
+    {
+      "path": "science/exact_thresholds.md",
+      "index": 93,
+      "source_sha256": "cb7b74bd3a1ae1763438667c854c7c3f9aaf2048b3aac75ac48acb412812b8ef",
+      "expected_text": "TroutJ=I/4"
+    },
+    {
+      "path": "science/exact_thresholds.md",
+      "index": 94,
+      "source_sha256": "7dda69c40968e3252c18ecb6ec5868115815c1eba3dae4868ab7a807fea1d234",
+      "expected_text": "(id⊗B)(J)=I164−J−(I⊗V)JΓ(I⊗V†)."
+    },
+    {
+      "path": "science/exact_thresholds.md",
+      "index": 109,
+      "source_sha256": "28d7429dcc27b9c2a59ffe3289766c3cd1ad75d97b3533e99886aad6950938f2",
+      "expected_text": "Sg(X)=∑s=±1Tr(Πg,sX)Πg,s2=14[Tr(X)I+Tr(gX)g]."
+    },
+    {
+      "path": "science/exact_thresholds.md",
+      "index": 116,
+      "source_sha256": "8ace04ccf86b7b1c3387b8af5da3dd93b24dbd41ef8e277726d4501b97e61aeb",
+      "expected_text": "Tg,h(X)=∑s,tTr(Πs,tX)Πs,t"
+    },
+    {
+      "path": "science/model.md",
+      "index": 4,
+      "source_sha256": "0a130a4676ed997a70a33ed21fd9e668d2a778612b5df6fe94dbfcc1ae7aa22f",
+      "expected_text": "Hphys=E0H,H=3ZI+ZZ=diag(4,2,−4,−2),E0>0."
+    },
+    {
+      "path": "science/model.md",
+      "index": 34,
+      "source_sha256": "d042201e532c71ea3726d5c570debad1802c3bfe9c945cc5a2f31268231217d1",
+      "expected_text": "Lβ,η∘Ade−isH=Ade−isH∘Lβ,η(s∈R)."
+    },
+    {
+      "path": "science/model.md",
+      "index": 37,
+      "source_sha256": "3552af62e7b97e83dc2a3c1f572003136112b999b1bf53d22a7b4142e3373c06",
+      "expected_text": "σβ=e−βHtr(e−βH)."
+    },
+    {
+      "path": "science/model.md",
+      "index": 38,
+      "source_sha256": "e77ab9d28b880e7bd59aa91d9c807a560cd80006b9501ca0e437327f2ede0155",
+      "expected_text": "⟨X,Y⟩σβ=tr(σβX†Y)."
+    },
+    {
+      "path": "science/model.md",
+      "index": 44,
+      "source_sha256": "29b787fd8f124848ec1f448aaae48d52ae4f9d5b4da2b1a3fa184224725ebee6",
+      "expected_text": "⟨X,MAω(Y)⟩σβ=tr(AωσβX†Aω†Y)=eβωtr(σβAωX†Aω†Y)=⟨eβωAωXAω†,Y⟩σβ."
+    },
+    {
+      "path": "science/model.md",
+      "index": 54,
+      "source_sha256": "52c9074a7f9297956c8cd7339fac532071c3ec697e38be7edf830e266d18a870",
+      "expected_text": "tr(σβLβ,η∗(X))=0foreveryX,Lβ,η(σβ)=0."
+    },
+    {
+      "path": "science/model.md",
+      "index": 78,
+      "source_sha256": "71f976488cb9dbb6942e4b701c7bae1d3d879bed02cd6d13b3548fe68b5a1a17",
+      "expected_text": "(Qβ)ij(σβ)jj=Cijtr(e−βH)e−β(Ei+Ej)/2=(Qβ)ji(σβ)ii."
     },
     {
       "path": "science/operational_meaning.md",
@@ -41,6 +192,30 @@
         "t<tP(η)",
         "t≥tE(η)"
       ]
+    },
+    {
+      "path": "science/operational_meaning.md",
+      "index": 44,
+      "source_sha256": "3a74aab85437a915ea9faa04a854f21ffa48c41f922870c364dd01ff7af771dc",
+      "expected_text": "[(idR⊗Φ)(ρRA)]ΓB=(idR⊗T∘Φ)(ρRA)≥0."
+    },
+    {
+      "path": "science/operational_meaning.md",
+      "index": 48,
+      "source_sha256": "709b05a9a745ca8f53cb6d8f6f7ef6d8271317fad30b5e3bbf0ec395ecd83f76",
+      "expected_text": "ρA′BB0′ΓBB0=(idA′B⊗TB0∘ΦA0→B0)(ρA′A0BΓB)≥0."
+    },
+    {
+      "path": "science/operational_meaning.md",
+      "index": 51,
+      "source_sha256": "e747bcf2736ef269d39c6151ffe03b9f7d60ce29fab676bcd7b9c385b0eafb60",
+      "expected_text": "⟨ΩD|ω|ΩD⟩=Tr[(|ΩD⟩⟨ΩD|)ΓωΓ]=1DTr(FswapωΓ)≤1D,"
+    },
+    {
+      "path": "science/thermal_extension.md",
+      "index": 10,
+      "source_sha256": "1866af4104ad0c3733168dc305e1d76fcecf459c0b3df968365f4a78adca6cb7",
+      "expected_text": "B(X)=tr(X)I−X−VXTV†,V=YI,VT=−V."
     }
   ]
 }

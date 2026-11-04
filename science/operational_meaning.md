@@ -112,15 +112,15 @@ This bound is illustrative and is not an optimization of the capacity. The recur
 For a channel $`\Phi`$, positivity of its partially transposed Choi matrix is equivalent to complete positivity of $`T\circ\Phi`$, where $`T`$ is transposition on the output. If $`\Phi`$ is PPT, then for every positive input $`\rho_{RA}`$,
 
 ```math
-\bigl[(\operatorname{id}_R\otimes\Phi)(\rho_{RA})\bigr]^{\Gamma_B}
-=(\operatorname{id}_R\otimes T\circ\Phi)(\rho_{RA})\geq0.
+\bigl[(\mathrm{id}_R\otimes\Phi)(\rho_{RA})\bigr]^{\Gamma_B}
+=(\mathrm{id}_R\otimes T\circ\Phi)(\rho_{RA})\geq0.
 ```
 
 The conclusion extends to arbitrary adaptive protocols. Suppose Alice and Bob currently share a state $`\rho_{A'A_0B}`$ that is PPT across Alice versus Bob, and Alice sends $`A_0`$ through a PPT channel to create $`B_0`$. Then
 
 ```math
 \rho_{A'BB_0}'{}^{\Gamma_{BB_0}}
-=\bigl(\operatorname{id}_{A'B}\otimes T_{B_0}\circ\Phi_{A_0\to B_0}\bigr)
+=\bigl(\mathrm{id}_{A'B}\otimes T_{B_0}\circ\Phi_{A_0\to B_0}\bigr)
 (\rho_{A'A_0B}^{\Gamma_B})\geq0.
 ```
 
@@ -131,10 +131,10 @@ A PPT state $`\omega`$ cannot approximate a maximally entangled state of Schmidt
 ```math
 \begin{aligned}
 \langle\Omega_D\rvert\omega\lvert\Omega_D\rangle
-&=\operatorname{Tr}\!\left[
+&=\mathrm{Tr}\!\left[
 \left(\lvert\Omega_D\rangle\langle\Omega_D\rvert\right)^\Gamma
 \omega^\Gamma\right]\\
-&=\frac1D\operatorname{Tr}(F_{\rm swap}\omega^\Gamma)
+&=\frac1D\mathrm{Tr}(F_{\rm swap}\omega^\Gamma)
 \leq\frac1D,
 \end{aligned}
 ```

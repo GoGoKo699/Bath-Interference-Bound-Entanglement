@@ -1,0 +1,22 @@
+# Bath Interference Bound Entanglement
+
+Question: can equal-frequency bath-pathway interference separate the loss of quantum communication from complete entanglement breaking while keeping population relaxation unchanged?
+
+Scientific entry: science/README.md
+Physical model, units, Kossakowski blocks, quantum detailed balance and matched quantities: science/model.md
+Exact infinite-temperature PPT/EB thresholds, constructive EB decomposition and small-interference onset: science/exact_thresholds.md
+Two-way assisted quantum capacity sign and explicit two-qubit filtering: science/operational_meaning.md
+Analytical positive-temperature certificate and perturbation domain: science/thermal_extension.md
+Physical synthesis, resource interpretation, detuning and Lamb-shift boundaries: science/interpretation.md
+Prior results, source versions and contribution boundaries: references/RELATED_WORK.md
+Structured references: references/references.bib
+Reproduction commands, dependencies, expected outputs and verification limits: verification/README.md
+
+Preserve these distinctions:
+- The Hamiltonian has nondegenerate energy levels but repeated Bohr gaps.
+- Interference changes coherence transfer, not population rates or bare coherence self-damping. Full coherence eigenmodes can change.
+- Exact all-interference threshold formulas hold at inverse temperature zero. A separate rigorous example proves persistence at positive inverse temperature.
+- Two-way capacity is proved positive before the PPT boundary and zero from that boundary onward; its numerical value and unassisted capacity are not characterized.
+- The endpoint static symplectic geometry and general PPT/EB facts are imported ingredients. The account develops a matched Davies family and its exact dynamical boundaries.
+- Strict finite-time generator perturbations do not justify arbitrary Hamiltonian detuning followed by a new fully secular limit.
+- Science pages own the claims and proofs. Verification is supporting finite evidence, not a substitute for those proofs.

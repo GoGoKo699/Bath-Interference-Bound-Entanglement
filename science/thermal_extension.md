@@ -181,7 +181,7 @@ give
 
 ```math
 \delta
-\lt 52\frac{3}{16}\frac1{2499}
+\lt 52\cdot\frac{3}{16}\cdot\frac1{2499}
 =\frac{39}{9996}
 \lt \frac{1369}{250000}.
 ```

@@ -216,6 +216,12 @@
       "index": 10,
       "source_sha256": "1866af4104ad0c3733168dc305e1d76fcecf459c0b3df968365f4a78adca6cb7",
       "expected_text": "B(X)=tr(X)I−X−VXTV†,V=YI,VT=−V."
+    },
+    {
+      "path": "science/thermal_extension.md",
+      "index": 47,
+      "source_sha256": "d26e37eb45b711400b1c60ab214daf0a90ca592873d290a979a15d0a3e87aca4",
+      "expected_text": "δ<52⋅316⋅12499=399996<1369250000."
     }
   ]
 }

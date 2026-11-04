@@ -11,6 +11,14 @@ Physical synthesis, resource interpretation, detuning and Lamb-shift boundaries:
 Prior results, source versions and contribution boundaries: references/RELATED_WORK.md
 Structured references: references/references.bib
 Reproduction commands, dependencies, expected outputs and verification limits: verification/README.md
+Commit-pinned GitHub mathematics capture and display-review limits: verification/hosted_math/README.md
+
+Learning entry: learning/README.md
+Single educational anchor: Ángel Rivas and Susana F. Huelga, Open Quantum Systems: An Introduction, first edition (2012).
+Verified source sections, published-book/author-preprint mapping, notation translation and worked coherence-transfer example: learning/RIVAS_HUELGA_BRIDGE.md
+Exactly 30 project-intrinsic understanding targets: learning/MILESTONES.md (M01–M14 background/preliminaries; M15–M30 narrative/innovation).
+
+For a first reading, follow the learning entry, use the selected source bridge alongside the milestone map, and consult the linked scientific pages for the complete proofs. For a theorem check, use the direct science routes above. The anchor supplies open-system foundations; the repository and attributed primary papers supply the entanglement and capacity steps beyond that source.
 
 Preserve these distinctions:
 - The Hamiltonian has nondegenerate energy levels but repeated Bohr gaps.

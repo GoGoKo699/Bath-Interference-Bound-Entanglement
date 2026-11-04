@@ -98,3 +98,11 @@ Run the verification command first. The plot script requires its passing results
 Finite samples do not prove a statement for every $`\eta`$, every time, or every temperature. Those quantifiers follow from the analytical identities, convex decomposition, monotonicity arguments, and perturbation inequalities in the scientific pages. The program uses ordinary double-precision linear algebra, not interval arithmetic or a formal proof assistant.
 
 The illustrative distillation rates certify positivity in the sampled pre-PPT regime; they are not capacity values or optimized lower bounds. The suite does not claim generic Hamiltonian-detuning robustness, a fixed-positive-temperature law for every interference value, an unassisted capacity formula, or a minimal reservoir implementation. These remain separate scientific questions.
+
+## Inspect the hosted mathematics
+
+The separate [GitHub rendering collector](hosted_math/README.md) compares the
+formulas in a pinned source revision with the actual hosted MathML and saves
+screenshots at two widths. Its automated checks and a visual review establish
+display evidence; they do not replace the analytical arguments or the numerical
+reconstruction above.

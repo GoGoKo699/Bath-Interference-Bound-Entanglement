@@ -20,7 +20,7 @@ The normalized Choi state uses a four-dimensional reference:
 
 ```math
 J_{\beta,\eta,t}
-=(\operatorname{id}_4\otimes\Phi_{\beta,\eta,t})
+=(\mathrm{id}_4\otimes\Phi_{\beta,\eta,t})
 \bigl(|\Omega_4\rangle\langle\Omega_4|\bigr),
 \qquad
 |\Omega_4\rangle=\frac12\sum_{j=0}^{3}|j,j\rangle.

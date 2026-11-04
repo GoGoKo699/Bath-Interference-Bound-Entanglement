@@ -1,0 +1,53 @@
+name: Hosted mathematics
+
+on:
+  pull_request:
+    paths:
+      - '**.md'
+      - 'verification/hosted_math/**'
+      - '.github/workflows/hosted-math.yml'
+  push:
+    branches: [main]
+    paths:
+      - '**.md'
+      - 'verification/hosted_math/**'
+      - '.github/workflows/hosted-math.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  capture:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      SOURCE_REVISION: ${{ github.event.pull_request.head.sha || github.sha }}
+    steps:
+      - name: Check out the inspected revision and collector
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Install isolated browser dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/hosted-dependencies" playwright@1.56.1 mathjax-full@3.2.1
+          node "$RUNNER_TEMP/hosted-dependencies/node_modules/playwright/cli.js" install --with-deps chromium
+      - name: Capture all Markdown pages at the inspected revision
+        env:
+          NODE_PATH: ${{ runner.temp }}/hosted-dependencies/node_modules
+        run: |
+          node verification/hosted_math/capture_hosted_math.cjs \
+            --root "$GITHUB_WORKSPACE" \
+            --repository "$GITHUB_REPOSITORY" \
+            --revision "$SOURCE_REVISION" \
+            --contract verification/hosted_math/math-contract.json \
+            --output "$RUNNER_TEMP/hosted-math"
+      - name: Preserve captures and diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: hosted-math-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/hosted-math/
+          if-no-files-found: warn
+          retention-days: 7

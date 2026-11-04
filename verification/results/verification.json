@@ -1,0 +1,739 @@
+{
+  "schema_version": 1,
+  "scope": "Finite-dimensional numerical checks of the stated analytical results; not interval arithmetic or a capacity-value computation.",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "configuration": {
+    "eta_grid": [
+      0.0,
+      0.001,
+      0.01,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.99,
+      1.0
+    ],
+    "beta_grid": [
+      0.0,
+      0.0001,
+      0.1
+    ],
+    "absolute_tolerance": 5e-11,
+    "times_per_eta": 8
+  },
+  "checks": {
+    "component_trace_preservation": {
+      "max_error": 0.0,
+      "tolerance": 5e-11,
+      "evaluations": 20,
+      "passed": true
+    },
+    "component_choi_positivity": {
+      "max_error": 5.784578264484698e-17,
+      "tolerance": 5e-11,
+      "evaluations": 20,
+      "passed": true
+    },
+    "component_retained_coefficients": {
+      "max_error": 0.0,
+      "tolerance": 5e-11,
+      "evaluations": 320,
+      "passed": true
+    },
+    "two_generator_representations": {
+      "max_error": 5.329070518200751e-15,
+      "tolerance": 5e-11,
+      "evaluations": 27,
+      "passed": true
+    },
+    "generator_trace_preservation": {
+      "max_error": 2.6645352591003757e-15,
+      "tolerance": 5e-11,
+      "evaluations": 27,
+      "passed": true
+    },
+    "specified_hamiltonian_covariance": {
+      "max_error": 0.0,
+      "tolerance": 5e-11,
+      "evaluations": 27,
+      "passed": true
+    },
+    "gibbs_stationarity": {
+      "max_error": 7.771561172376096e-16,
+      "tolerance": 5e-11,
+      "evaluations": 27,
+      "passed": true
+    },
+    "gns_detailed_balance": {
+      "max_error": 2.220446049250313e-16,
+      "tolerance": 5e-11,
+      "evaluations": 27,
+      "passed": true
+    },
+    "matched_population_generator": {
+      "max_error": 3.552713678800501e-15,
+      "tolerance": 5e-11,
+      "evaluations": 27,
+      "passed": true
+    },
+    "matched_matrix_unit_self_damping": {
+      "max_error": 7.105427357601002e-15,
+      "tolerance": 5e-11,
+      "evaluations": 27,
+      "passed": true
+    },
+    "infinite_temperature_gap": {
+      "max_error": 3.552713678800501e-15,
+      "tolerance": 5e-11,
+      "evaluations": 9,
+      "passed": true
+    },
+    "explicit_population_matrix": {
+      "max_error": 0.0,
+      "tolerance": 5e-11,
+      "evaluations": 1,
+      "passed": true
+    },
+    "physical_channel_pauli_multipliers": {
+      "max_error": 4.440892098500626e-16,
+      "tolerance": 5e-11,
+      "evaluations": 1152,
+      "passed": true
+    },
+    "physical_channel_choi_expansion": {
+      "max_error": 6.938893903907228e-17,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "channel_trace_preservation": {
+      "max_error": 4.440892098500626e-16,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "choi_normalization": {
+      "max_error": 4.440892098500626e-16,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "choi_hermiticity": {
+      "max_error": 8.326672684688674e-17,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "channel_complete_positivity": {
+      "max_error": 5.551115123125784e-17,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "partial_transpose_complete_spectrum": {
+      "max_error": 2.220446049250313e-16,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "rank_two_partial_transpose_eigenvector": {
+      "max_error": 3.2959746043559335e-17,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "breuer_hall_eigenvector": {
+      "max_error": 1.0408340855860843e-16,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "breuer_hall_minimum": {
+      "max_error": 1.487525380650112e-16,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "projection_success_probability": {
+      "max_error": 1.1102230246251565e-16,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "normalized_projected_state": {
+      "max_error": 1.942890293094024e-16,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "projected_state_trace": {
+      "max_error": 2.220446049250313e-16,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "projected_partial_transpose_minimum": {
+      "max_error": 1.6653345369377348e-16,
+      "tolerance": 5e-11,
+      "evaluations": 72,
+      "passed": true
+    },
+    "eb_weight_normalization": {
+      "max_error": 7.771561172376096e-15,
+      "tolerance": 5e-11,
+      "evaluations": 9,
+      "passed": true
+    },
+    "actual_measure_prepare_reconstruction": {
+      "max_error": 2.0539125955565396e-15,
+      "tolerance": 5e-11,
+      "evaluations": 9,
+      "passed": true
+    },
+    "reconstructed_channel_trace_preservation": {
+      "max_error": 7.549516567451064e-15,
+      "tolerance": 5e-11,
+      "evaluations": 9,
+      "passed": true
+    },
+    "eta_zero_equal_thresholds": {
+      "max_error": 0.0,
+      "tolerance": 5e-11,
+      "evaluations": 1,
+      "passed": true
+    },
+    "eta_one_ppt_closed_form": {
+      "max_error": 0.0,
+      "tolerance": 5e-11,
+      "evaluations": 1,
+      "passed": true
+    },
+    "eta_one_eb_closed_form": {
+      "max_error": 9.43689570931383e-16,
+      "tolerance": 5e-11,
+      "evaluations": 1,
+      "passed": true
+    },
+    "finite_beta_zero_ppt_reference": {
+      "max_error": 3.903127820947816e-17,
+      "tolerance": 5e-11,
+      "evaluations": 1,
+      "passed": true
+    },
+    "finite_beta_zero_bh_reference": {
+      "max_error": 7.979727989493313e-17,
+      "tolerance": 5e-11,
+      "evaluations": 1,
+      "passed": true
+    }
+  },
+  "commuting_triples": [
+    [
+      "IX",
+      "XI",
+      "XX"
+    ],
+    [
+      "IX",
+      "YI",
+      "YX"
+    ],
+    [
+      "IX",
+      "ZI",
+      "ZX"
+    ],
+    [
+      "IY",
+      "XI",
+      "XY"
+    ],
+    [
+      "IY",
+      "YI",
+      "YY"
+    ],
+    [
+      "IY",
+      "ZI",
+      "ZY"
+    ],
+    [
+      "IZ",
+      "XI",
+      "XZ"
+    ],
+    [
+      "IZ",
+      "YI",
+      "YZ"
+    ],
+    [
+      "IZ",
+      "ZI",
+      "ZZ"
+    ],
+    [
+      "XX",
+      "YY",
+      "ZZ"
+    ],
+    [
+      "XX",
+      "YZ",
+      "ZY"
+    ],
+    [
+      "XY",
+      "YX",
+      "ZZ"
+    ],
+    [
+      "XY",
+      "YZ",
+      "ZX"
+    ],
+    [
+      "XZ",
+      "YX",
+      "ZY"
+    ],
+    [
+      "XZ",
+      "YY",
+      "ZX"
+    ]
+  ],
+  "eb_component_count": 20,
+  "thresholds": [
+    {
+      "eta": 0.0,
+      "t_ppt": 0.16866198426208537,
+      "t_eb": 0.16866198426208537,
+      "binding_interval_width": 0.0,
+      "minimum_mixture_weight": 0.0,
+      "mixture_weight_sum": 1.0000000000000016,
+      "actual_channel_reconstruction_error": 3.885780586188048e-16
+    },
+    {
+      "eta": 0.001,
+      "t_ppt": 0.16866198870607985,
+      "t_eb": 0.16868833772384847,
+      "binding_interval_width": 2.6349017768628746e-05,
+      "minimum_mixture_weight": 0.0001248938104360664,
+      "mixture_weight_sum": 1.0000000000000013,
+      "actual_channel_reconstruction_error": 4.996003610813204e-16
+    },
+    {
+      "eta": 0.01,
+      "t_ppt": 0.1686624286632484,
+      "t_eb": 0.1689259641820787,
+      "binding_interval_width": 0.00026353551883029347,
+      "minimum_mixture_weight": 0.0012477313381864252,
+      "mixture_weight_sum": 1.000000000000001,
+      "actual_channel_reconstruction_error": 4.440892098500626e-16
+    },
+    {
+      "eta": 0.1,
+      "t_ppt": 0.16870644153799463,
+      "t_eb": 0.17134720773783949,
+      "binding_interval_width": 0.0026407661998448517,
+      "minimum_mixture_weight": 0.011832268558420247,
+      "mixture_weight_sum": 1.0,
+      "actual_channel_reconstruction_error": 2.498001805406602e-16
+    },
+    {
+      "eta": 0.25,
+      "t_ppt": 0.16894041246047287,
+      "t_eb": 0.17557382422196413,
+      "binding_interval_width": 0.006633411761491265,
+      "minimum_mixture_weight": 0.016110399323740407,
+      "mixture_weight_sum": 1.0,
+      "actual_channel_reconstruction_error": 1.942890293094024e-16
+    },
+    {
+      "eta": 0.5,
+      "t_ppt": 0.1697839256895737,
+      "t_eb": 0.18320700321957004,
+      "binding_interval_width": 0.01342307752999633,
+      "minimum_mixture_weight": 0.022115609715602946,
+      "mixture_weight_sum": 1.0000000000000002,
+      "actual_channel_reconstruction_error": 1.6653345369377348e-16
+    },
+    {
+      "eta": 0.75,
+      "t_ppt": 0.17121787045095363,
+      "t_eb": 0.1916889177100282,
+      "binding_interval_width": 0.02047104725907456,
+      "minimum_mixture_weight": 0.026689271962641967,
+      "mixture_weight_sum": 0.9999999999999999,
+      "actual_channel_reconstruction_error": 1.6653345369377348e-16
+    },
+    {
+      "eta": 0.99,
+      "t_ppt": 0.17319108397874983,
+      "t_eb": 0.2007783437440567,
+      "binding_interval_width": 0.027587259765306876,
+      "minimum_mixture_weight": 0.029717111691574004,
+      "mixture_weight_sum": 0.9999999999999984,
+      "actual_channel_reconstruction_error": 4.996003610813204e-16
+    },
+    {
+      "eta": 1.0,
+      "t_ppt": 0.17328679513998632,
+      "t_eb": 0.2011797390542616,
+      "binding_interval_width": 0.02789294391427527,
+      "minimum_mixture_weight": 0.02981423969999753,
+      "mixture_weight_sum": 1.0000000000000078,
+      "actual_channel_reconstruction_error": 2.0539125955565396e-15
+    }
+  ],
+  "small_interference_coefficients": {
+    "t_zero": 0.16866198426208537,
+    "s_zero": 0.18514428432288246,
+    "ppt_quadratic_coefficient": 0.004443994304601352,
+    "eb_linear_coefficient": 0.02634852378883311,
+    "width_linear_coefficient": 0.02634852378883311
+  },
+  "thermal_examples": [
+    {
+      "beta": 0.0,
+      "eta": 1.0,
+      "time": 0.18349229377005014,
+      "ppt_minimum_eigenvalue": 0.005475999999999961,
+      "breuer_hall_minimum_eigenvalue": -0.01899999999999992,
+      "status": "analytically_certified_below"
+    },
+    {
+      "beta": 0.0001,
+      "eta": 1.0,
+      "time": 0.18349229377005014,
+      "ppt_minimum_eigenvalue": 0.005472457972090183,
+      "breuer_hall_minimum_eigenvalue": -0.018999999108085714,
+      "status": "analytically_certified_below"
+    },
+    {
+      "beta": 0.1,
+      "eta": 1.0,
+      "time": 0.18349229377005014,
+      "ppt_minimum_eigenvalue": 0.0011861598109127454,
+      "breuer_hall_minimum_eigenvalue": -0.01817140482608237,
+      "status": "numerical_observation_only"
+    }
+  ],
+  "finite_beta_certificate": {
+    "beta": 0.0001,
+    "eta": 1.0,
+    "time": 0.18349229377005014,
+    "diamond_distance_upper_bound": 0.0038174031401463637,
+    "beta_zero_ppt_margin": 0.005476,
+    "beta_zero_bh_negative_margin": 0.019,
+    "certified_ppt_margin": 0.0016585968598536362,
+    "certified_bh_negative_margin": 0.011365193719707272,
+    "observed_choi_trace_norm_difference": 0.00026897976021705156
+  },
+  "illustrative_distillation_rates": [
+    {
+      "eta": 0.0,
+      "time": 0.0,
+      "fraction_of_t_ppt": 0.0,
+      "initial_fidelity": 0.9999999999999998,
+      "projection_probability": 0.5,
+      "recurrence_rounds": 0,
+      "final_fidelity": 0.9999999999999998,
+      "hashing_yield": 0.9999999999999878,
+      "positive_rate_lower_bound": 0.4999999999999939
+    },
+    {
+      "eta": 0.0,
+      "time": 0.08433099213104268,
+      "fraction_of_t_ppt": 0.5,
+      "initial_fidelity": 0.7256087644263595,
+      "projection_probability": 0.3408753704468812,
+      "recurrence_rounds": 5,
+      "final_fidelity": 0.9057512855136315,
+      "hashing_yield": 0.4001246396748843,
+      "positive_rate_lower_bound": 0.001158360019544288
+    },
+    {
+      "eta": 0.0,
+      "time": 0.15179578583587683,
+      "fraction_of_t_ppt": 0.9,
+      "initial_fidelity": 0.5373424402547815,
+      "projection_probability": 0.2904437244398933,
+      "recurrence_rounds": 15,
+      "final_fidelity": 0.9105253179779507,
+      "hashing_yield": 0.4234720449235631,
+      "positive_rate_lower_bound": 7.561705727368704e-09
+    },
+    {
+      "eta": 0.001,
+      "time": 0.0,
+      "fraction_of_t_ppt": 0.0,
+      "initial_fidelity": 0.9999999999999998,
+      "projection_probability": 0.5,
+      "recurrence_rounds": 0,
+      "final_fidelity": 0.9999999999999998,
+      "hashing_yield": 0.9999999999999878,
+      "positive_rate_lower_bound": 0.4999999999999939
+    },
+    {
+      "eta": 0.001,
+      "time": 0.08433099435303992,
+      "fraction_of_t_ppt": 0.5,
+      "initial_fidelity": 0.7256087618465463,
+      "projection_probability": 0.3408753680237833,
+      "recurrence_rounds": 5,
+      "final_fidelity": 0.905751283505151,
+      "hashing_yield": 0.4001246299346928,
+      "positive_rate_lower_bound": 0.0011583599638876963
+    },
+    {
+      "eta": 0.001,
+      "time": 0.15179578983547187,
+      "fraction_of_t_ppt": 0.9,
+      "initial_fidelity": 0.5373424396085563,
+      "projection_probability": 0.2904437224987909,
+      "recurrence_rounds": 15,
+      "final_fidelity": 0.9105253154703402,
+      "hashing_yield": 0.423472032555752,
+      "positive_rate_lower_bound": 7.561705161109586e-09
+    },
+    {
+      "eta": 0.01,
+      "time": 0.0,
+      "fraction_of_t_ppt": 0.0,
+      "initial_fidelity": 0.9999999999999998,
+      "projection_probability": 0.5,
+      "recurrence_rounds": 0,
+      "final_fidelity": 0.9999999999999998,
+      "hashing_yield": 0.9999999999999878,
+      "positive_rate_lower_bound": 0.4999999999999939
+    },
+    {
+      "eta": 0.01,
+      "time": 0.0843312143316242,
+      "fraction_of_t_ppt": 0.5,
+      "initial_fidelity": 0.7256085064442909,
+      "projection_probability": 0.3408751281364823,
+      "recurrence_rounds": 5,
+      "final_fidelity": 0.9057510846647848,
+      "hashing_yield": 0.40012366565219504,
+      "positive_rate_lower_bound": 0.0011583544538762399
+    },
+    {
+      "eta": 0.01,
+      "time": 0.15179618579692356,
+      "fraction_of_t_ppt": 0.9,
+      "initial_fidelity": 0.5373423756321059,
+      "projection_probability": 0.29044353032938663,
+      "recurrence_rounds": 15,
+      "final_fidelity": 0.9105250672158344,
+      "hashing_yield": 0.423470808137724,
+      "positive_rate_lower_bound": 7.5616491014556e-09
+    },
+    {
+      "eta": 0.1,
+      "time": 0.0,
+      "fraction_of_t_ppt": 0.0,
+      "initial_fidelity": 0.9999999999999998,
+      "projection_probability": 0.5,
+      "recurrence_rounds": 0,
+      "final_fidelity": 0.9999999999999998,
+      "hashing_yield": 0.9999999999999878,
+      "positive_rate_lower_bound": 0.4999999999999939
+    },
+    {
+      "eta": 0.1,
+      "time": 0.08435322076899732,
+      "fraction_of_t_ppt": 0.5,
+      "initial_fidelity": 0.7255829587729958,
+      "projection_probability": 0.3408511332510801,
+      "recurrence_rounds": 5,
+      "final_fidelity": 0.905731192837955,
+      "hashing_yield": 0.40002720300031397,
+      "positive_rate_lower_bound": 0.001157803366556725
+    },
+    {
+      "eta": 0.1,
+      "time": 0.15183579738419517,
+      "fraction_of_t_ppt": 0.9,
+      "initial_fidelity": 0.5373359766353002,
+      "projection_probability": 0.2904243105085396,
+      "recurrence_rounds": 15,
+      "final_fidelity": 0.9105002319609495,
+      "hashing_yield": 0.4233483234943921,
+      "positive_rate_lower_bound": 7.556043294562411e-09
+    },
+    {
+      "eta": 0.25,
+      "time": 0.0,
+      "fraction_of_t_ppt": 0.0,
+      "initial_fidelity": 0.9999999999999998,
+      "projection_probability": 0.5,
+      "recurrence_rounds": 0,
+      "final_fidelity": 0.9999999999999998,
+      "hashing_yield": 0.9999999999999878,
+      "positive_rate_lower_bound": 0.4999999999999939
+    },
+    {
+      "eta": 0.25,
+      "time": 0.08447020623023643,
+      "fraction_of_t_ppt": 0.5,
+      "initial_fidelity": 0.7254472318272581,
+      "projection_probability": 0.3407236835898255,
+      "recurrence_rounds": 5,
+      "final_fidelity": 0.9056254474375924,
+      "hashing_yield": 0.39951451757777934,
+      "positive_rate_lower_bound": 0.0011548780801349824
+    },
+    {
+      "eta": 0.25,
+      "time": 0.15204637121442557,
+      "fraction_of_t_ppt": 0.9,
+      "initial_fidelity": 0.5373019977751122,
+      "projection_probability": 0.29032229183482217,
+      "recurrence_rounds": 15,
+      "final_fidelity": 0.9103682046564453,
+      "hashing_yield": 0.4226973631539155,
+      "positive_rate_lower_bound": 7.526320820202777e-09
+    },
+    {
+      "eta": 0.5,
+      "time": 0.0,
+      "fraction_of_t_ppt": 0.0,
+      "initial_fidelity": 0.9999999999999998,
+      "projection_probability": 0.5,
+      "recurrence_rounds": 0,
+      "final_fidelity": 0.9999999999999998,
+      "hashing_yield": 0.9999999999999878,
+      "positive_rate_lower_bound": 0.4999999999999939
+    },
+    {
+      "eta": 0.5,
+      "time": 0.08489196284478685,
+      "fraction_of_t_ppt": 0.5,
+      "initial_fidelity": 0.7249590762316837,
+      "projection_probability": 0.3402656837903105,
+      "recurrence_rounds": 5,
+      "final_fidelity": 0.9052442004111134,
+      "hashing_yield": 0.39766768326634583,
+      "positive_rate_lower_bound": 0.0011443913308936155
+    },
+    {
+      "eta": 0.5,
+      "time": 0.15280553312061634,
+      "fraction_of_t_ppt": 0.9,
+      "initial_fidelity": 0.5371800267321,
+      "projection_probability": 0.2899566261851479,
+      "recurrence_rounds": 15,
+      "final_fidelity": 0.909892171420299,
+      "hashing_yield": 0.4203528382431655,
+      "positive_rate_lower_bound": 7.42024425187614e-09
+    },
+    {
+      "eta": 0.75,
+      "time": 0.0,
+      "fraction_of_t_ppt": 0.0,
+      "initial_fidelity": 0.9999999999999998,
+      "projection_probability": 0.5,
+      "recurrence_rounds": 0,
+      "final_fidelity": 0.9999999999999998,
+      "hashing_yield": 0.9999999999999878,
+      "positive_rate_lower_bound": 0.4999999999999939
+    },
+    {
+      "eta": 0.75,
+      "time": 0.08560893522547681,
+      "fraction_of_t_ppt": 0.5,
+      "initial_fidelity": 0.7241334224962391,
+      "projection_probability": 0.33949239907665474,
+      "recurrence_rounds": 5,
+      "final_fidelity": 0.9045960677135164,
+      "hashing_yield": 0.3945336091163619,
+      "positive_rate_lower_bound": 0.0011267762183954182
+    },
+    {
+      "eta": 0.75,
+      "time": 0.15409608340585826,
+      "fraction_of_t_ppt": 0.9,
+      "initial_fidelity": 0.5369745745591704,
+      "projection_probability": 0.2893426006185356,
+      "recurrence_rounds": 15,
+      "final_fidelity": 0.9090828190768497,
+      "hashing_yield": 0.4163758167702586,
+      "positive_rate_lower_bound": 7.243730118557308e-09
+    },
+    {
+      "eta": 0.99,
+      "time": 0.0,
+      "fraction_of_t_ppt": 0.0,
+      "initial_fidelity": 0.9999999999999998,
+      "projection_probability": 0.5,
+      "recurrence_rounds": 0,
+      "final_fidelity": 0.9999999999999998,
+      "hashing_yield": 0.9999999999999878,
+      "positive_rate_lower_bound": 0.4999999999999939
+    },
+    {
+      "eta": 0.99,
+      "time": 0.08659554198937491,
+      "fraction_of_t_ppt": 0.5,
+      "initial_fidelity": 0.723005890375115,
+      "projection_probability": 0.33843912073393523,
+      "recurrence_rounds": 5,
+      "final_fidelity": 0.9037042134716206,
+      "hashing_yield": 0.3902324799063052,
+      "positive_rate_lower_bound": 0.001102966742193394
+    },
+    {
+      "eta": 0.99,
+      "time": 0.15587197558087484,
+      "fraction_of_t_ppt": 0.9,
+      "initial_fidelity": 0.5366957265146761,
+      "projection_probability": 0.28851305254160575,
+      "recurrence_rounds": 15,
+      "final_fidelity": 0.9079690682028153,
+      "hashing_yield": 0.4109217069019487,
+      "positive_rate_lower_bound": 7.008461893290745e-09
+    },
+    {
+      "eta": 1.0,
+      "time": 0.0,
+      "fraction_of_t_ppt": 0.0,
+      "initial_fidelity": 0.9999999999999998,
+      "projection_probability": 0.5,
+      "recurrence_rounds": 0,
+      "final_fidelity": 0.9999999999999998,
+      "hashing_yield": 0.9999999999999878,
+      "positive_rate_lower_bound": 0.4999999999999939
+    },
+    {
+      "eta": 1.0,
+      "time": 0.08664339756999316,
+      "fraction_of_t_ppt": 0.5,
+      "initial_fidelity": 0.722951453111403,
+      "projection_probability": 0.3383883476483184,
+      "recurrence_rounds": 5,
+      "final_fidelity": 0.9036609564313373,
+      "hashing_yield": 0.3900242011481257,
+      "positive_rate_lower_bound": 0.0011018243792344797
+    },
+    {
+      "eta": 1.0,
+      "time": 0.1559581156259877,
+      "fraction_of_t_ppt": 0.9,
+      "initial_fidelity": 0.5366823141319821,
+      "projection_probability": 0.2884732629170286,
+      "recurrence_rounds": 15,
+      "final_fidelity": 0.9079150497941617,
+      "hashing_yield": 0.4106577217113664,
+      "positive_rate_lower_bound": 6.997269597909795e-09
+    }
+  ]
+}
